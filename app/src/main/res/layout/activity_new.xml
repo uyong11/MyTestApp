@@ -9,38 +9,36 @@
         layout="@layout/toolbar_main"
         android:id="@+id/toolbar" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="51dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         tools:text="추가" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText2"
         android:layout_width="136dp"
         android:layout_height="41dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:text="항목명"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <EditText
+        android:id="@+id/txtNewItem"
         android:layout_width="302dp"
         android:layout_height="43dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
-        android:text="TextView"
+        android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,8 +50,11 @@
         android:layout_height="47dp"
         android:layout_marginStart="232dp"
         android:layout_marginTop="60dp"
-        android:text="확인"
+        android:text="@string/add_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNewItem"
+        android:onClick="addNew" />
+
+
 
 </android.support.constraint.ConstraintLayout>

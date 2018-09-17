@@ -2,4 +2,6 @@
     <string name="app_name">CarManage</string>
     <string name="new_item">create item</string>
     <string name="new_item_title">Create item..</string>
+    <string name="add_button">추가</string>
 </resources>
+
