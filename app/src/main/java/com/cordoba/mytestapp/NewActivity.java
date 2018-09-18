@@ -17,6 +17,7 @@ public class NewActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
+    
 
     public void addNew(View view){
         EditText newItem= (EditText) findViewById(R.id.txtNewItem);
